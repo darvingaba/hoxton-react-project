@@ -1,45 +1,53 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
+        <div className="title">Planner</div>
+        <ul className="menu">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Login</li>
+        </ul>
       </header>
+      <main></main>
+
+      <footer>
+        <div className="footer-content">
+          <div className="footer-title title">Planner</div>
+          <div className="footer-description">
+            <p>
+              Planner is a web application that allows you to book a hotel and
+              manage your personal holidays.
+            </p>
+          </div>
+          <div className="footer-email">
+            <input type="email" className="footer-input" />
+            <button className="subscribe-button">Subscribe</button>
+          </div>
+          <div className="footer-social">
+            <a className="footer-links" href="https://www.facebook.com/">
+              <img src="./src/img/facebook.svg" alt="facebook" />
+            </a>
+            <a className="footer-links" href="https://www.instagram.com/">
+              <img src="./src/img/instagram.svg" alt="instagram" />
+            </a>
+            <a className="footer-links" href="https://www.twitter.com/">
+              <img src="./src/img/twitter.svg" alt="twitter" />
+            </a>
+            <a className="footer-links" href="https://www.linkedin.com/">
+              <img src="./src/img/linkedin.svg" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-  )
+  );
 }
 
 export default App
+
+
