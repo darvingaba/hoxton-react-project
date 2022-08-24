@@ -3,7 +3,7 @@ type Hotel = {
   country: string;
   description: string;
   id: string;
-  images: string;
+  image: string;
   name: string;
   price: number;
   rating: number;
@@ -20,7 +20,7 @@ export function HotelList({hotels}:Props){
             {hotels.map((hotel) => (
               <li className='singleHotel'>
                 <p>{hotel.name}</p>
-                <img src={hotel.images} alt="" />
+                <img src={hotel.image} alt="" />
                 <button className='bookButton'>Book</button>
               </li>
             ))}
