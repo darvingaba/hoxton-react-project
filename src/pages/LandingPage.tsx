@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export function LandingPage(){
@@ -15,7 +16,9 @@ export function LandingPage(){
             explicabo voluptatum modi nesciunt, fuga, necessitatibus corporis
             odio laboriosam! Laborum, et distinctio!
           </p>
-          <button className="exploreButton">Explore</button>
+          <Link to={`/hotelList`}>
+            <button className="exploreButton">Explore</button>
+          </Link>
         </div>
         <div className="lower">
           <img className="worldMap" src="/src/img/World Map.svg" alt="" />

@@ -23,17 +23,18 @@ export function SingleHotel(){
         .then((data) => setHotel(data));
     }, []);
 
-    return(
-        <div className="hotel">
-            <div className="leftSide">
-                <img src={hotel.image} alt="" />
-            </div>
-            <div className="rightSide">
-                <h2>{hotel.name}</h2>
-                <p>{hotel.description}</p>
-                <p>Price per night: {hotel.price}$</p>
-                <button>Book</button>
-            </div>
+    return (
+      <div className="hotel">
+        <div className="leftSide">
+          <img src={hotel.image} alt="" />
         </div>
-    )
+        <div className="rightSide">
+          <h2>{hotel.name}</h2>
+          <p>{hotel.description}</p>
+          <p>Price per night: {hotel.price}$</p>
+          <p>{hotel.stars} Stars</p>
+          <button>Book</button>
+        </div>
+      </div>
+    );
 }

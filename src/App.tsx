@@ -36,10 +36,15 @@ function App() {
     .then(response=>response.json())
     .then(response=>setHotels(response))
    },[]);
+   useEffect(() => {
+     fetch("http://localhost:3001/user")
+       .then((response) => response.json())
+       .then((response) => setServerUser(response));
+   }, []);
 
   return (
     <div className="App">
-      <Header />
+      <Header serverUser={serverUser}/>
       <main>
         <Routes>
           <Route index element={<Navigate to='/landingpage'/>}/>
