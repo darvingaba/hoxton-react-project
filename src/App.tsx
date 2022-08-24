@@ -6,6 +6,8 @@ import { Header } from './components/Header';
 import { HotelList } from './pages/HotelList';
 import { LandingPage } from './pages/LandingPage';
 import { LoginPage } from './pages/LoginPage';
+import { SignUp } from './pages/SignUp';
+import { SingleHotel } from './pages/SingleHotel';
 
 type Hotel = {
   city: string;
@@ -20,8 +22,15 @@ type Hotel = {
   rating: number;
   stars: number;
 };
+type User = {
+  name: string;
+  email: string;
+  password: string;
+}
 function App() {
   let [hotels, setHotels] = useState([]);
+  let [serverUser, setServerUser] = useState<User>({} as User);
+  let [input, setInput] = useState({ email: "", password: "" });
    useEffect(()=>{
     fetch("http://localhost:3001/hotels")
     .then(response=>response.json())
@@ -36,7 +45,14 @@ function App() {
           <Route index element={<Navigate to='/landingpage'/>}/>
           <Route path='landingpage' element={<LandingPage/>}/>
           <Route path='hotelList' element={<HotelList hotels={hotels}/>}/>
-          <Route path='login' element={<LoginPage/>}/>
+          <Route path='login' element={<LoginPage
+           serverUser={serverUser}
+           setServerUser={setServerUser}
+           input={input}
+           setInput={setInput}
+          />}/>
+          <Route  path='signup' element={<SignUp/>}/>
+          <Route path='hotelsList/:id' element={<SingleHotel/>}/>
 
      
        </Routes>
