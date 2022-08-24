@@ -180,6 +180,33 @@ label{
     display: grid;
 }
 
+.hotel{
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    /* border: 1px solid black; */
+    padding: 4rem 15rem;
+}
+.rightSide{
+    display: grid;
+    border: 1px solid black;
+    padding: 4rem 2rem ;
+    border-radius: 12px;
+    gap :10px;
+}
+.rightSide Button{
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    padding:1rem 1.2rem;
+    border-radius: 12px;
+    color: white;
+    transition: all 0.3s;
+    background-color: #165e6f;
+    /* position: ; */
+}
+.rightSide Button:hover{
+    background-color: white;
+    color: #165e6f;
+}
 
 form button{
     border: 1px solid rgba(0, 0, 0, 0.185);

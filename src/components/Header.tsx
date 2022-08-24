@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom"
 
-export function Header({serverUser}){
+type User = {
+  name: string;
+  email: string;
+  password: string;
+};
+type Props={
+  serverUser:User
+}
+export function Header({serverUser}:Props){
 
 
     return (

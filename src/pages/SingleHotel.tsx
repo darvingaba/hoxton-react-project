@@ -33,6 +33,17 @@ export function SingleHotel(){
           <p>{hotel.description}</p>
           <p>Price per night: {hotel.price}$</p>
           <p>{hotel.stars} Stars</p>
+          <form>
+            <label>Set Arriving Date
+                <input type="date" name="" id="" />
+            </label>
+            <label>Set Leaving Date
+                <input type="date" name="" id="" />
+            </label>
+            <label>Number of people
+                <input type="number" name="" id="" />
+            </label>
+          </form>
           <button>Book</button>
         </div>
       </div>
