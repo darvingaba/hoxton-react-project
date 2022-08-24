@@ -32,7 +32,7 @@ function App() {
   let [serverUser, setServerUser] = useState<User>({} as User);
   let [input, setInput] = useState({ email: "", password: "" });
    useEffect(()=>{
-    fetch("http://localhost:3001/hotels")
+    fetch("http://localhost:3005/hotels")
     .then(response=>response.json())
     .then(response=>setHotels(response))
    },[]);

@@ -18,7 +18,7 @@ export function SingleHotel(){
     let params=useParams()
 
     useEffect(() => {
-      fetch(`http://localhost:3001/hotels/${params.id}`)
+      fetch(`http://localhost:3005/hotels/${params.id}`)
         .then((response) => response.json())
         .then((data) => setHotel(data));
     }, []);
