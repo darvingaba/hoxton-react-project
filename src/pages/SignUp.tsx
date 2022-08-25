@@ -1,52 +1,66 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Header } from "../components/Header";
-type NewUser={
-    name:string;
-    email:string;
-    password:string
-}
+
 export function SignUp(){
-    let[newUser,setNewUser]=useState({}as NewUser)
-    let[user,setUser]=useState({}as NewUser)
+    let[name,setName] =useState("")
+    let[email,setEmail] =useState("")
+    let[password,setPassword] =useState("")
 
-    useEffect(()=>{
-      fetch("http://localhost:3001/user")
-      .then(resp=>resp.json())
-      .then(resp=>setUser(resp))
-    })
+   
+    
+    function updateServer(){
+        fetch("http://localhost:3000/user", {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body:JSON.stringify({
+            name:name,
+            email:email,
+            password:password
+          })
+        });
 
-    function updateServer(e){
-        e.preventDefault();
-        fetch("http://localhost:3001/user",{
-            method: "PATCH",
-            body:JSON.stringify({
-                name:newUser
-            })
-        })
-        
     }
+
+
+
     return (
+      <div className="loginPage">
+        <h1>Create an Account</h1>
+        <form>
+          <label>
+            Name
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          <label>
+            Email
+            <input
+              type="text"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </label>
+          <label>
+            Password
+            <input
+              type="password"
+              name="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </label>
 
-        <div className="loginPage">
-            <h1>Create an Account</h1>
-            <form onSubmit={
-                updateServer
-            }>
-                <label>Name
-                    <input type="text" name="name" value={newUser.name}
-                     onChange={(e)=>setNewUser({...newUser,name:e.target.value})
-                }
-                    />
-                </label>
-                <label>Email
-                    <input type="text" name="email"  />
-                </label>
-                <label>Password
-                    <input type="password" name="password"  />
-                </label>
-
-                <button>Sign Up</button>
-            </form>
-        </div>
+          <button onClick={updateServer}>Sign Up</button>
+          <Link to={"/login"}>
+            <button>Sign In</button>
+          </Link>
+        </form>
+      </div>
     );
 }

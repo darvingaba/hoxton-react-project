@@ -18,7 +18,7 @@ export function SingleHotel(){
     let params=useParams()
 
     useEffect(() => {
-      fetch(`http://localhost:3005/hotels/${params.id}`)
+      fetch(`http://localhost:3000/hotels/${params.id}`)
         .then((response) => response.json())
         .then((data) => setHotel(data));
     }, []);
@@ -27,21 +27,24 @@ export function SingleHotel(){
       <div className="hotel">
         <div className="leftSide">
           <img src={hotel.image} alt="" />
+          <p>{hotel.description}</p>
         </div>
         <div className="rightSide">
           <h2>{hotel.name}</h2>
-          <p>{hotel.description}</p>
           <p>Price per night: {hotel.price}$</p>
           <p>{hotel.stars} Stars</p>
           <form>
-            <label>Set Arriving Date
-                <input type="date" name="" id="" />
+            <label>
+              Set Arriving Date
+              <input type="date" name="" id="" />
             </label>
-            <label>Set Leaving Date
-                <input type="date" name="" id="" />
+            <label>
+              Set Leaving Date
+              <input type="date" name="" id="" />
             </label>
-            <label>Number of people
-                <input type="number" name="" id="" />
+            <label>
+              Number of people
+              <input type="number" name="" id="" />
             </label>
           </form>
           <button>Book</button>

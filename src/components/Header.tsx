@@ -6,9 +6,9 @@ type User = {
   password: string;
 };
 type Props = {
-  serverUser: User;
+  user: User;
 };
-export function Header({ serverUser }: Props) {
+export function Header({ user }: Props) {
   return (
     <>
       <header className="App-header">
@@ -20,8 +20,8 @@ export function Header({ serverUser }: Props) {
           <li>About</li>
           <li>Contact</li>
           <Link to={"/login"}>
-            {serverUser.name !== "" ? (
-              <li>Hello {serverUser.name}</li>
+            {user.name !== "" ? (
+              <li>Hello {user.name}</li>
             ) : (
               <li>Login</li>
             )}

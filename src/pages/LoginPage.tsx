@@ -8,39 +8,36 @@ type User = {
   email: string;
   password: string;
 };
-type Props = {
-  setServerUser: React.Dispatch<React.SetStateAction<User>>;
-  input: { email: string; password: string };
+// type Props = {
+//   setServerUser: React.Dispatch<React.SetStateAction<User>>;
+//   input: { email: string; password: string };
 
-  setInput: React.Dispatch<
-    React.SetStateAction<{
-      email: string;
-      password: string;
-    }>
-  >;
-  serverUser: User;
-};
+//   setInput: React.Dispatch<
+//     React.SetStateAction<{
+//       email: string;
+//       password: string;
+//     }>
+//   >;
+//   serverUser: User;
+// };
 
-export function LoginPage({
-  setServerUser,
-  input,
-  serverUser,
-  setInput,
-}: Props) {
-  useEffect(() => {
-    fetch("http://localhost:3001/user")
-      .then((resp) => resp.json())
-      .then((resp) => setServerUser(resp));
-  }, []);
+export function LoginPage() {
+  // let [user,setUser]=useState({}as User)
+  // useEffect(() => {
+  //   fetch("http://localhost:3001/user")
+  //     .then((resp) => resp.json())
+  //     .then((resp) => setUser(resp));
+  // }, []);
+  // console.log(user.name)
 
-  if (
-    input.email === serverUser.email &&
-    input.password === serverUser.password
-  ) {
-    console.log(`${input.email} logged in`);
-  } else {
-    console.log("no match");
-  }
+  // if (
+  //   input.email === serverUser.email &&
+  //   input.password === serverUser.password
+  // ) {
+  //   console.log(`${input.email} logged in`);
+  // } else {
+  //   console.log("no match");
+  // }
 
   return (
     <div className="loginPage">
@@ -51,8 +48,6 @@ export function LoginPage({
           <input
             type="text"
             name="email"
-            value={input.email}
-            onChange={(e) => setInput({ ...input, email: e.target.value })}
           />
         </label>
         <label>
@@ -60,8 +55,6 @@ export function LoginPage({
           <input
             type="password"
             name="password"
-            value={input.password}
-            onChange={(e) => setInput({ ...input, password: e.target.value })}
           />
         </label>
         <Link to={"/landingpage"}>

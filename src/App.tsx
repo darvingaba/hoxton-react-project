@@ -29,33 +29,29 @@ type User = {
 }
 function App() {
   let [hotels, setHotels] = useState([]);
-  let [serverUser, setServerUser] = useState<User>({} as User);
-  let [input, setInput] = useState({ email: "", password: "" });
+  // let [input, setInput] = useState({ email: "", password: "" });
+  let [user, setUser] = useState({} as User);
    useEffect(()=>{
-    fetch("http://localhost:3005/hotels")
-    .then(response=>response.json())
-    .then(response=>setHotels(response))
+    fetch("http://localhost:3000/hotels")
+      .then((response) => response.json())
+      .then((response) => setHotels(response));
    },[]);
-   useEffect(() => {
-     fetch("http://localhost:3001/user")
-       .then((response) => response.json())
-       .then((response) => setServerUser(response));
-   }, []);
+
+    useEffect(() => {
+      fetch("http://localhost:3000/user")
+        .then((resp) => resp.json())
+        .then((resp) => setUser(resp));
+    }, []);
 
   return (
     <div className="App">
-      <Header serverUser={serverUser}/>
+      <Header user={user}/>
       <main>
         <Routes>
           <Route index element={<Navigate to='/landingpage'/>}/>
           <Route path='landingpage' element={<LandingPage/>}/>
           <Route path='hotelList' element={<HotelList hotels={hotels}/>}/>
-          <Route path='login' element={<LoginPage
-           serverUser={serverUser}
-           setServerUser={setServerUser}
-           input={input}
-           setInput={setInput}
-          />}/>
+          <Route path='login' element={<LoginPage/>}/>
           <Route  path='signup' element={<SignUp/>}/>
           <Route path='hotelsList/:id' element={<SingleHotel/>}/>
 
