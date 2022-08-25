@@ -1,10 +1,32 @@
 {
   "hotels": [
     {
+      "city": "Paris",
+      "country": "France",
+      "description": "The Grand Hotel is a luxury hotel in the city of Paris. The hotel was built in the late 1800s and is located near the Champs-Élysées. The hotel has been used by many famous people over the years, including Queen Victoria and Charlie Chaplin.",
+      "id": "1",
+      "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
+      "name": "Grand Hotel",
+      "price": 200,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Rome",
+      "country": "Italy",
+      "description": "Louise hotel is a hotel that offers 5-star accommodation. It has been designed to be an oasis of peace, with lush gardens and a serene setting.",
+      "id": "2",
+      "image": "https://allbookers.com/images/type/Hotel.png",
+      "name": "Louise hotel",
+      "price": 250,
+      "rating": 5,
+      "stars": 5
+    },
+    {
       "city": "Tirana",
       "country": "Albania",
       "description": "A luxury hotel",
-      "id": "asas",
+      "id": "3",
       "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
       "name": "L Hotel",
       "price": 200,
@@ -15,18 +37,7 @@
       "city": "Tirana",
       "country": "Albania",
       "description": "A luxury hotel",
-      "id": "asass",
-      "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
-      "name": "b Hotel",
-      "price": 200,
-      "rating": 4.8,
-      "stars": 5
-    },
-    {
-      "city": "Tirana",
-      "country": "Albania",
-      "description": "A luxury hotel",
-      "id": "asassa",
+      "id": "4",
       "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
       "name": "L Hotel",
       "price": 200,
@@ -37,18 +48,7 @@
       "city": "Tirana",
       "country": "Albania",
       "description": "A luxury hotel",
-      "id": "asasssaa",
-      "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
-      "name": "L Hotel",
-      "price": 200,
-      "rating": 4.8,
-      "stars": 5
-    },
-    {
-      "city": "Tirana",
-      "country": "Albania",
-      "description": "A luxury hotel",
-      "id": "asassasasas",
+      "id": "5",
       "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
       "name": "L Hotel",
       "price": 200,
@@ -60,5 +60,10 @@
     "name": "",
     "email": "",
     "password": ""
+  },
+  "appointment": {
+    "arrivingDate": "2022-08-27",
+    "leavingDate": "2022-09-02",
+    "people": "3"
   }
 }

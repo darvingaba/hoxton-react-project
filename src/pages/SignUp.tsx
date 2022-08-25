@@ -29,7 +29,6 @@ export function SignUp({user}:Props){
             password:password
           })
         });
-
     }
 
 

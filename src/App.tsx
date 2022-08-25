@@ -3,6 +3,7 @@ import { Routes,Route, Navigate } from 'react-router-dom';
 import './App.css';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
+import { Appointment } from './pages/Appointment';
 import { HotelList } from './pages/HotelList';
 import { LandingPage } from './pages/LandingPage';
 import { LoginPage } from './pages/LoginPage';
@@ -56,6 +57,7 @@ function App() {
           <Route path='login' element={<LoginPage user={user}/>}/>
           <Route  path='signup' element={<SignUp user={user}/>}/>
           <Route path='hotelsList/:id' element={<SingleHotel/>}/>
+          <Route path='appointment/:id' element={<Appointment/>}/>
 
      
        </Routes>

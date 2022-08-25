@@ -19,6 +19,7 @@ type Props={
 export function HotelList({hotels}:Props){
     return (
       <div className="hotelsContainer">
+        <h2 className="hotels">Check this list of hotels</h2>
         <ul className="hotelsList">
           {hotels.map((hotel) => (
             <Link to={`/hotelsList/${hotel.id}`} key={hotel.id}>
