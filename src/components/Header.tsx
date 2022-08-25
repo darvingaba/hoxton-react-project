@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 type User = {
@@ -8,7 +9,24 @@ type User = {
 type Props = {
   user: User;
 };
-export function Header({ user }: Props) {
+export function Header({user}:Props) {
+
+    
+
+
+  function Logout(){
+    fetch("http://localhost:3000/user", {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: "",
+        email: "",
+        password: "",
+      }),
+    });
+  }
   return (
     <>
       <header className="App-header">
@@ -21,11 +39,14 @@ export function Header({ user }: Props) {
           <li>Contact</li>
           <Link to={"/login"}>
             {user.name !== "" ? (
-              <li>Hello {user.name}</li>
+              <li onClick={Logout}>
+                Logout
+              </li>
             ) : (
               <li>Login</li>
             )}
           </Link>
+          
         </ul>
       </header>
     </>

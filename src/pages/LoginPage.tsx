@@ -1,53 +1,41 @@
-import { SetStateAction, useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { HotelList } from "./HotelList";
-import { LandingPage } from "./LandingPage";
+
 
 type User = {
   name: string;
   email: string;
   password: string;
 };
-// type Props = {
-//   setServerUser: React.Dispatch<React.SetStateAction<User>>;
-//   input: { email: string; password: string };
+type Props = {
+  user: User;
+};
 
-//   setInput: React.Dispatch<
-//     React.SetStateAction<{
-//       email: string;
-//       password: string;
-//     }>
-//   >;
-//   serverUser: User;
-// };
+export function LoginPage({user}:Props) {
+  
+  let [emailInput, setEmailInput] = useState("");
+  let [passwordInput, setPasswordInput] = useState("");
+  // console.log(emailInput)
 
-export function LoginPage() {
-  // let [user,setUser]=useState({}as User)
-  // useEffect(() => {
-  //   fetch("http://localhost:3001/user")
-  //     .then((resp) => resp.json())
-  //     .then((resp) => setUser(resp));
-  // }, []);
-  // console.log(user.name)
+  function CheckAccount(){
+    if(emailInput!=user.email&& passwordInput!=user.password){
+      alert("wrong credentials")
+    }else{
 
-  // if (
-  //   input.email === serverUser.email &&
-  //   input.password === serverUser.password
-  // ) {
-  //   console.log(`${input.email} logged in`);
-  // } else {
-  //   console.log("no match");
-  // }
+    }
+  }
 
   return (
     <div className="loginPage">
-        <h1>Log In</h1>
-      <form onSubmit={(e) => e.preventDefault()}>
+      <h1>Log In</h1>
+      <form>
         <label>
           Email
           <input
             type="text"
             name="email"
+            value={emailInput}
+            onChange={(e) => setEmailInput(e.target.value)}
           />
         </label>
         <label>
@@ -55,16 +43,21 @@ export function LoginPage() {
           <input
             type="password"
             name="password"
+            value={passwordInput}
+            onChange={(e) => setPasswordInput(e.target.value)}
           />
         </label>
         <Link to={"/landingpage"}>
-          <button>Log In</button>
+          <button
+          >Log In</button>
         </Link>
       </form>
 
       <div className="signup">
         <h1>Don't have an account? Sign up</h1>
-        <Link to={"/signup"}>Create Account</Link>
+        <Link className="createAccount" to={"/signup"}>
+          Create Account
+        </Link>
       </div>
     </div>
   );

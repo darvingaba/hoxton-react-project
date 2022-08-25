@@ -1,15 +1,23 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Header } from "../components/Header";
 
-export function SignUp(){
+type User = {
+  name: string;
+  email: string;
+  password: string;
+};
+type Props={
+  user:User
+}
+export function SignUp({user}:Props){
     let[name,setName] =useState("")
     let[email,setEmail] =useState("")
     let[password,setPassword] =useState("")
 
    
     
-    function updateServer(){
+    function updateServer(e){
+      e.preventDefault()
         fetch("http://localhost:3000/user", {
           method: "PATCH",
           headers: {
@@ -29,6 +37,14 @@ export function SignUp(){
     return (
       <div className="loginPage">
         <h1>Create an Account</h1>
+
+        {user.email != "" ? (
+          <li>
+            <h2>Hello {user.name}. Please sign in.</h2>
+          </li>
+        ) : (
+          <li></li>
+        )}
         <form>
           <label>
             Name
