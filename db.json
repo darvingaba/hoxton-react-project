@@ -23,35 +23,199 @@
       "stars": 5
     },
     {
-      "city": "Tirana",
-      "country": "Albania",
-      "description": "A luxury hotel",
+      "city": "Colorado",
+      "country": "USA",
+      "description": "The Stanley Hotel is a five-star resort in     Estes Park, Colorado. It was opened in 1909 and has been a  popular destination for celebrities and politicians alike.It was built by F.O. Stanley, who made his fortune as the inventor of the Stanley Steamer automobile, and his wife Anna  Louise James.",
       "id": "3",
-      "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
-      "name": "L Hotel",
-      "price": 200,
+      "image": "https://www.oyster.com/wp-content/uploads/sites/35/2019/05/the-hotel-v5143096-1440-1024x683.jpg",
+      "name": "The Stanley Hotel",
+      "price": 220,
       "rating": 4.8,
       "stars": 5
     },
     {
-      "city": "Tirana",
-      "country": "Albania",
-      "description": "A luxury hotel",
+      "city": "Israel",
+      "country": "Jerusalem",
+      "description": "The King David Jerusalem Hotel is a luxury hotel that is located in the heart of Jerusalem. It has been operating since 1931 and it has a total of 240 rooms. The King David Jerusalem Hotel has been a popular destination for travelers and tourists from all over the world, who come to visit this historic city.The King David Jerusalem Hotel is one of the most iconic hotels in the world. It was built in 1931 by an English architect named Sir Edward Lutyens, who was an expert on Tudor architecture. The hotel building was modeled after the Grand Trianon palace at Versailles, France.",
       "id": "4",
-      "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
-      "name": "L Hotel",
+      "image": "http://dimg04.c-ctrip.com/images/22070w000000kp03x3FBA.jpg",
+      "name": "The King David Hotel",
+      "price": 160,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "London",
+      "country": "England",
+      "description": "Claridge's is a luxurious 5-star hotel in London. It was established in 1854 and has been popular among celebrities, royals and other affluent clients.The hotel's history dates back to the Victorian era. It was originally a townhouse that belonged to Richard D'Oyly Carte, the founder of the D'Oyly Carte Opera Company. The house became known as Clarence after Clarence House, the London home of Queen Elizabeth II and Prince Philip.In 1854, it was purchased by William Claridge who turned it into a luxury hotel with 24 rooms on four floors. The building underwent several renovations including one by Sir John Soane in 1806 and another by architect Jules Pellechet in 1912-1914 which added an",
+      "id": "5",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/207161677.jpg?k=7215d2f763323760776ac99a0a651b404f19b0b8b6732de3b5cf1496e278f853&o=&hp=1",
+      "name": "Claridge's",
+      "price": 400,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "description": "The Burj Al Arab Jumeirah is a luxury hotel in Dubai, United Arab Emirates. The hotel is the most luxurious and expensive hotel in the world.The Burj Al Arab Jumeirah has been ranked as the number one hotel in the world by TripAdvisor every year since 2005. It is also ranked as one of the world's best hotels for service and quality, according to Travel + Leisure magazine.",
+      "id": "6",
+      "image": "https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/burj-al-arab-jumeirah/hero/burj-al-arab-profile-exterior_6-4_landscape.jpg?h=1080&w=1620",
+      "name": "The Burj Al Arab Jumeirah",
+      "price": 800,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "New York",
+      "country": "USA",
+      "description": "Some of the most luxurious hotels in the world are located in New York City. The Plaza is one of them. It is located on Fifth Avenue, near Central Park, and it was built in 1907 by Henry J. Hardenbergh.The Plaza offers guests a wide range of services, including excellent food and drinks in its restaurants and cafés, a full-service spa that provides treatments, and a theater that hosts Broadway shows all year long.The hotel has been featured as the setting for many movies and TV shows, such as Home Alone 2: Lost In New York (1992), The Great Gatsby (1974) and Spider-Man 2 (2004).",
+      "id": "7",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/New_York_-_Manhattan_-_Plaza_Hotel.jpg",
+      "name": "The Plaza",
+      "price": 600,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Qebec",
+      "country": "Canada",
+      "description": "Fairmont Le Château Frontenac is a 5-star hotel in Quebec City, Canada. The hotel has been operating since 1908 and it provides a luxury experience for its guests.The hotel is located in the heart of Quebec City, with many attractions nearby. Guests can enjoy the beautiful scenery and historic buildings of the city by visiting the Citadelle of Quebec or walking along the Saint Lawrence River.The Fairmont Le Château Frontenac offers different types of rooms to accommodate different needs; there are standard rooms, suites, and executive suites that are all decorated with elegant furniture and decorations to create a luxurious atmosphere. The hotel also offers an onsite restaurant called Le Champlain that serves traditional French cuisine as well as international dishes from around the world.",
+      "id": "8",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ch%C3%A2teau_Frontenac_02.jpg",
+      "name": "Fairmont Le Château",
+      "price": 1000,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "USA",
+      "country": "Yellowstone National Park",
+      "description": "A historic hotel is a place where famous historical figures stayed or stayed at while traveling. These hotels offer travelers a chance to experience history without having to travel to a specific time period. In addition, many historic hotels have gardens and interior courtyards that provide visitors with plenty of space to stroll and relax. A hotel’s historical significance often depends on when it opened and who stayed there. For example, a famous literary figure might stay at an historic inn if he wanted to have his own private rooms with a view. Alternatively, a historical landmark that has hosted presidents and world leaders will easily surpass any ordinary hotel’s historical ambience.",
+      "id": "9",
+      "image": "https://www.yellowstonepark.com/wp-content/uploads/2021/03/YS-OldFaithfulInn-night-lights_Ordelheide_2400.jpg",
+      "name": "Old Faithful Inn",
+      "price": 300,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Marrakesh",
+      "country": "Moroco",
+      "description": "La Mamounia is a Moorish Revival style resort in Morocco. It is located in the Rif region of the country at an elevation of 2,300 feet. The hotel is named after sultan Muhammed IV’s wife, Mamounia. She purchased the land for the resort in 1932 and had it constructed two years later. She wanted to create an oasis that was both natural and man-made. Her goal was to combine her native art with European design to create an aesthetic that was uniquely Moroccan.",
+      "id": "10",
+      "image": "https://y.cdrst.com/foto/hotel-sf/40d3d/granderesp/la-mamounia-general-c4f6724.jpg",
+      "name": "La Mamounia",
+      "price": 250,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "St.Petersburg",
+      "country": "Russia",
+      "description": "Grand Hotel Europa St Petersburg is a luxurious hotel in the center of St Petersburg. It is one of the best hotels in the city and has a great reputation for its comfort and quality. The hotel is one of the most popular tourist destinations in St Petersburg and offers a wide range of services and amenities, including a gym and a spa. The hotel has a beautiful, modern architecture and is located in a prestigious area of the city.",
+      "id": "11",
+      "image": "https://assets.suitcasemag.com/images/fullscreen/195526-belmond-grand-hotel-europe-st-petersburg-russia-window-table-ceiling.jpg",
+      "name": "Grand Hotel Europa",
+      "price": 400,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Massachusetts",
+      "country": "USA",
+      "description": "The Mayflower Hotel is a historic hotel located in Everett, Massachusetts. The hotel was built in 1865 and is a two-story, rectilinear structure. It features a large and elaborate front porch. The hotel was sold to the Commonwealth of Massachusetts in 1912 and was used as a state prison from 1913 to 1973. It was then used as a hotel until it was closed in 1984. The hotel was purchased by the Everett Chamber of Commerce in 1984 and was used as a museum until it was closed in 2000. It is now a museum of history and culture.",
+      "id": "12",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Mayflower_Hotel%2C_Washington%2C_D.C.jpg",
+      "name": "The Mayflower Hotel",
+      "price": 500,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Cernobbio",
+      "country": "Italy",
+      "description": "Villa de Ste Cernobbio is a beautiful and well-preserved Italian villa located in the province of Bologna, Italy. The villa, built in the early 18th century, was once the home of the counts of Ste Cernobbio. The villa is a mixture of Baroque and Rococo styles. The property has a large park with a gym, tennis and basketball courts, and a large pool.",
+      "id": "13",
+      "image": "https://imageio.forbes.com/blogs-images/everettpotter/files/2019/05/hotel_property_001-1200x718.jpg?format=jpg&width=960",
       "price": 200,
       "rating": 4.8,
       "stars": 5
     },
     {
-      "city": "Tirana",
-      "country": "Albania",
-      "description": "A luxury hotel",
-      "id": "5",
-      "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/95/96959_v6.jpeg",
-      "name": "L Hotel",
-      "price": 200,
+      "city": "Paris",
+      "country": "France",
+      "description": "The Ritz Paris Hotel is a landmark in the world of luxury hotels. The hotel opened in 1902 and has been the scene of many famous guests, including King Louis XVIII and President Roosevelt. The hotel is located in the city of Paris and offers a wide range of services and activities for guests, including a spa, a casino and a library.",
+      "id": "14",
+      "image": "https://i.pinimg.com/originals/83/d2/36/83d23611e35f85c3e262d297df63c7e5.jpg",
+      "name": "Ritz ",
+      "price": 500,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Florida",
+      "country": "USA",
+      "description": "Disney Contemporary Resort is a popular tourist spot in the Magic Kingdom area of Orlando, Florida. The resort is located on Walt Disney World's property, just a short distance from the parks.",
+      "id": "15",
+      "image": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/14/31/14310_v4.jpeg",
+      "name": "Disney's Contemporary Resort",
+      "price": 800,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Shanghai",
+      "country": "China",
+      "description": "Mandarin Oriental is a luxury hotel chain in China. The company was founded in 1911 by Wang Jingwei.The company has over 350 hotels in China, Taiwan, and Hong Kong. Its flagship hotel, Mandarin Oriental Hong Kong, is the only hotel in the world to beFirebrand Hotels brand.",
+      "id": "16",
+      "image": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/15/52/15524_v8.jpeg",
+      "name": "Mandarin Oriental",
+      "price": 600,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Beverly hills",
+      "country": "California",
+      "description": "The Beverly Hills Hotel is an iconic hotel located in Beverly Hills, California. It has been the home of many celebrities and Hollywood celebrities over the years, and has been featured in many movies and TV shows. The hotel was opened in 1923 and is one of the most well-known and well-maintained hotels in the area.",
+      "id": "17",
+      "image": "https://images.trvl-media.com/hotels/1000000/20000/12100/12057/ccfa9c03.jpg?impolicy=resizecrop&rw=670&ra=fit",
+      "name": "The Beverly Hills Hotel",
+      "price": 800,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "San Francisco",
+      "country": "California",
+      "description": "Fairmont San Francisco is a hotel located in the Financial District of San Francisco, California. The hotel is known for its architecture, which is inspired by the history and culture of Europe. The hotel has a variety of rooms, suites, and rooms with views. The hotel also has a restaurant, the Fairmont Ballroom, and a convention center.",
+      "id": "18",
+      "image": "https://www.ahstatic.com/photos/a576_ho_00_p_1024x768.jpg",
+      "name": "Fairmont San Francisco",
+      "price": 600,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "New York City",
+      "country": "New York",
+      "description": "The Waldorf Astoria is a luxury hotel located in New York City. It was founded in 1912 by the hotel magnate, Meyer Lansky. The hotel is known for its elaborate architecture, luxurious bedrooms, and fine cuisine. It is also a popular tourist destination.",
+      "id": "19",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/St_Bartholomews_and_The_Waldorf_Astoria_Hotel.jpg",
+      "name": "The Waldorf Astoria",
+      "price": 800,
+      "rating": 4.8,
+      "stars": 5
+    },
+    {
+      "city": "Mumbai",
+      "country": "India",
+      "description": "The Taj Mahal is a white marble and granite structure in memory of Emperor Shah Jahan's favorite wife Mumtaz Mahal. The structure is located in the city of Agra, in the present-day Uttar Pradesh state of India. The Mahal is one of the most famous tourist destinations in India. The Mahal is also known as the Tomb of the Mughal Emperor Shah Jahan and is one of the most popular tourist destinations in India.",
+      "id": "20",
+      "image": "https://whc.unesco.org/uploads/thumbs/site_0252_0008-750-750-20151104113424.jpg",
+      "name": "Taj Mahal",
+      "price": 800,
       "rating": 4.8,
       "stars": 5
     }
@@ -62,8 +226,8 @@
     "password": ""
   },
   "appointment": {
-    "arrivingDate": "2022-08-27",
-    "leavingDate": "2022-09-02",
-    "people": "3"
+    "arrivingDate": "",
+    "leavingDate": "",
+    "people": ""
   }
 }

@@ -50,6 +50,7 @@ export function SingleHotel(){
         </div>
         <div className="rightSide">
           <h2>{hotel.name}</h2>
+          <p>{hotel.city},{hotel.country}</p>
           <p>Price per night: {hotel.price}$</p>
           <p>{hotel.stars} Stars</p>
           <form>
@@ -79,7 +80,7 @@ export function SingleHotel(){
             </label>
           </form>
           <button onClick={updateServer}>Book</button>
-          <Link to={`/appointment/${hotel.id}`}>Check appointment</Link>
+          <Link to={`/appointment/${hotel.id}`}>Check your booking</Link>
         </div>
       </div>
     );
