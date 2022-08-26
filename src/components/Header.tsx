@@ -35,18 +35,14 @@ export function Header({user}:Props) {
           <Link to={"landingpage"}>
             <li>Home</li>
           </Link>
-          <li>About</li>
-          <li>Contact</li>
+          <Link to={"hotelList"}>Hotels</Link>
           <Link to={"/login"}>
             {user.name !== "" ? (
-              <li onClick={Logout}>
-                Logout
-              </li>
+              <li onClick={Logout}>Logout</li>
             ) : (
               <li>Login</li>
             )}
           </Link>
-          
         </ul>
       </header>
     </>
